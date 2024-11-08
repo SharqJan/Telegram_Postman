@@ -1,0 +1,366 @@
+{
+	"info": {
+		"_postman_id": "3c07875b-85a8-4aa9-9c7e-5df67720d890",
+		"name": "Telegram",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "28375934"
+	},
+	"item": [
+		{
+			"name": "GetAllChats",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://api.telegram.org/bot7649864666:AAGbhPKhfRjkGzUEGOic1pKeQjqLES6FWbY/getUpdates",
+					"protocol": "https",
+					"host": [
+						"api",
+						"telegram",
+						"org"
+					],
+					"path": [
+						"bot7649864666:AAGbhPKhfRjkGzUEGOic1pKeQjqLES6FWbY",
+						"getUpdates"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetMe",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://api.telegram.org/bot7649864666:AAGbhPKhfRjkGzUEGOic1pKeQjqLES6FWbY/getMe",
+					"protocol": "https",
+					"host": [
+						"api",
+						"telegram",
+						"org"
+					],
+					"path": [
+						"bot7649864666:AAGbhPKhfRjkGzUEGOic1pKeQjqLES6FWbY",
+						"getMe"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "SendMessage",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"chat_id\": \"6244869173\",\r\n    \"text\": \"Hello, this is a test message!\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://api.telegram.org/bot7649864666:AAGbhPKhfRjkGzUEGOic1pKeQjqLES6FWbY/sendMessage",
+					"protocol": "https",
+					"host": [
+						"api",
+						"telegram",
+						"org"
+					],
+					"path": [
+						"bot7649864666:AAGbhPKhfRjkGzUEGOic1pKeQjqLES6FWbY",
+						"sendMessage"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Webhook",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://api.telegram.org/bot7649864666:AAGbhPKhfRjkGzUEGOic1pKeQjqLES6FWbY/setWebhook?url=https://webhook.site/845c97ae-7bc9-4a70-bc7a-7624990738be",
+					"protocol": "https",
+					"host": [
+						"api",
+						"telegram",
+						"org"
+					],
+					"path": [
+						"bot7649864666:AAGbhPKhfRjkGzUEGOic1pKeQjqLES6FWbY",
+						"setWebhook"
+					],
+					"query": [
+						{
+							"key": "url",
+							"value": "https://webhook.site/845c97ae-7bc9-4a70-bc7a-7624990738be"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Webhook Info",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://api.telegram.org/bot7649864666:AAGbhPKhfRjkGzUEGOic1pKeQjqLES6FWbY/getWebhookInfo",
+					"protocol": "https",
+					"host": [
+						"api",
+						"telegram",
+						"org"
+					],
+					"path": [
+						"bot7649864666:AAGbhPKhfRjkGzUEGOic1pKeQjqLES6FWbY",
+						"getWebhookInfo"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Send Photo",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "chat_id",
+							"value": "6244869173",
+							"type": "text"
+						},
+						{
+							"key": "photo",
+							"type": "file",
+							"src": "/D:/Downloads/hello.gif"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://api.telegram.org/bot7649864666:AAGbhPKhfRjkGzUEGOic1pKeQjqLES6FWbY/sendPhoto",
+					"protocol": "https",
+					"host": [
+						"api",
+						"telegram",
+						"org"
+					],
+					"path": [
+						"bot7649864666:AAGbhPKhfRjkGzUEGOic1pKeQjqLES6FWbY",
+						"sendPhoto"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Send Video",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "chat_id",
+							"value": "6244869173",
+							"type": "text"
+						},
+						{
+							"key": "video",
+							"type": "file",
+							"src": "/C:/Users/Afridah/Downloads/WhiteListMsisdnExport.xlsx"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://api.telegram.org/bot7649864666:AAGbhPKhfRjkGzUEGOic1pKeQjqLES6FWbY/sendVideo",
+					"protocol": "https",
+					"host": [
+						"api",
+						"telegram",
+						"org"
+					],
+					"path": [
+						"bot7649864666:AAGbhPKhfRjkGzUEGOic1pKeQjqLES6FWbY",
+						"sendVideo"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Send Document",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "chat_id",
+							"value": "6244869173",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://api.telegram.org/bot7649864666:AAGbhPKhfRjkGzUEGOic1pKeQjqLES6FWbY/sendDocument",
+					"protocol": "https",
+					"host": [
+						"api",
+						"telegram",
+						"org"
+					],
+					"path": [
+						"bot7649864666:AAGbhPKhfRjkGzUEGOic1pKeQjqLES6FWbY",
+						"sendDocument"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get File By id",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"file_id\": \"BAACAgUAAxkBAAMQZyxsYR1Z3UFbN3A05yTc7sknJpgAApoTAAK842FVtPfXAAGL-UjnNgQ\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://api.telegram.org/bot7649864666:AAGbhPKhfRjkGzUEGOic1pKeQjqLES6FWbY/getFile",
+					"protocol": "https",
+					"host": [
+						"api",
+						"telegram",
+						"org"
+					],
+					"path": [
+						"bot7649864666:AAGbhPKhfRjkGzUEGOic1pKeQjqLES6FWbY",
+						"getFile"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DownloadFile",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://api.telegram.org/file/bot7649864666:AAGbhPKhfRjkGzUEGOic1pKeQjqLES6FWbY/photos/file_0.jpg",
+					"protocol": "https",
+					"host": [
+						"api",
+						"telegram",
+						"org"
+					],
+					"path": [
+						"file",
+						"bot7649864666:AAGbhPKhfRjkGzUEGOic1pKeQjqLES6FWbY",
+						"photos",
+						"file_0.jpg"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "CallBackForPlainText",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "CallBackForImage",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"update_id\": 155333953,\r\n  \"message\": {\r\n    \"message_id\": 15,\r\n    \"from\": {\r\n      \"id\": 6244869173,\r\n      \"is_bot\": false,\r\n      \"first_name\": \"Aafridah\",\r\n      \"language_code\": \"en\"\r\n    },\r\n    \"chat\": {\r\n      \"id\": 6244869173,\r\n      \"first_name\": \"Aafridah\",\r\n      \"type\": \"private\"\r\n    },\r\n    \"date\": 1730956339,\r\n    \"photo\": [\r\n      {\r\n        \"file_id\": \"AgACAgUAAxkBAAMPZyxMM4t7MMjm68uuSkdp49ezPbAAAnTfMRu842FVWfsFkuO7zv0BAAMCAANzAAM2BA\",\r\n        \"file_unique_id\": \"AQADdN8xG7zjYVV4\",\r\n        \"file_size\": 482,\r\n        \"width\": 90,\r\n        \"height\": 84\r\n      },\r\n      {\r\n        \"file_id\": \"AgACAgUAAxkBAAMPZyxMM4t7MMjm68uuSkdp49ezPbAAAnTfMRu842FVWfsFkuO7zv0BAAMCAANtAAM2BA\",\r\n        \"file_unique_id\": \"AQADdN8xG7zjYVVy\",\r\n        \"file_size\": 4620,\r\n        \"width\": 320,\r\n        \"height\": 297\r\n      },\r\n      {\r\n        \"file_id\": \"AgACAgUAAxkBAAMPZyxMM4t7MMjm68uuSkdp49ezPbAAAnTfMRu842FVWfsFkuO7zv0BAAMCAAN5AAM2BA\",\r\n        \"file_unique_id\": \"AQADdN8xG7zjYVV-\",\r\n        \"file_size\": 15977,\r\n        \"width\": 828,\r\n        \"height\": 769\r\n      },\r\n      {\r\n        \"file_id\": \"AgACAgUAAxkBAAMPZyxMM4t7MMjm68uuSkdp49ezPbAAAnTfMRu842FVWfsFkuO7zv0BAAMCAAN4AAM2BA\",\r\n        \"file_unique_id\": \"AQADdN8xG7zjYVV9\",\r\n        \"file_size\": 24917,\r\n        \"width\": 800,\r\n        \"height\": 743\r\n      }\r\n    ]\r\n  }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:7091/api/TelegramCallBack/7649864666",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7091",
+					"path": [
+						"api",
+						"TelegramCallBack",
+						"7649864666"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "CallBackForVideo",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"update_id\": 155333957,\r\n  \"message\": {\r\n    \"message_id\": 19,\r\n    \"from\": {\r\n      \"id\": 6244869173,\r\n      \"is_bot\": false,\r\n      \"first_name\": \"Aafridah\",\r\n      \"language_code\": \"en\"\r\n    },\r\n    \"chat\": {\r\n      \"id\": 6244869173,\r\n      \"first_name\": \"Aafridah\",\r\n      \"type\": \"private\"\r\n    },\r\n    \"date\": 1730966739,\r\n    \"video\": {\r\n      \"duration\": 15,\r\n      \"width\": 464,\r\n      \"height\": 848,\r\n      \"file_name\": \"IMG_1558.MP4\",\r\n      \"mime_type\": \"video/mp4\",\r\n      \"thumbnail\": {\r\n        \"file_id\": \"AAMCBQADGQEAAxBnLGxhHVndQVs3cDTnJNzuyScmmAACmhMAArzjYVW099cAAYv5SOcBAAdtAAM2BA\",\r\n        \"file_unique_id\": \"AQADmhMAArzjYVVy\",\r\n        \"file_size\": 12338,\r\n        \"width\": 175,\r\n        \"height\": 320\r\n      },\r\n      \"thumb\": {\r\n        \"file_id\": \"AAMCBQADGQEAAxBnLGxhHVndQVs3cDTnJNzuyScmmAACmhMAArzjYVW099cAAYv5SOcBAAdtAAM2BA\",\r\n        \"file_unique_id\": \"AQADmhMAArzjYVVy\",\r\n        \"file_size\": 12338,\r\n        \"width\": 175,\r\n        \"height\": 320\r\n      },\r\n      \"file_id\": \"BAACAgUAAxkBAAMQZyxsYR1Z3UFbN3A05yTc7sknJpgAApoTAAK842FVtPfXAAGL-UjnNgQ\",\r\n      \"file_unique_id\": \"AgADmhMAArzjYVU\",\r\n      \"file_size\": 2587370\r\n    },\r\n    \"caption\": \"Heufhjdjx\"\r\n  }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:7091/api/TelegramCallBack/7649864666",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7091",
+					"path": [
+						"api",
+						"TelegramCallBack",
+						"7649864666"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
